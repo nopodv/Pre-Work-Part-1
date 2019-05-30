@@ -41,70 +41,90 @@ h1 {
 
 /* Your CSS code goes here */
 
+.my-container {
+	margin: 2em auto;
+	max-width: 630px;
+	text-align: center;
+}
+
 header {
 	color: white;
 	background-color: #424242;
 	padding: 20px 60px;
+	width: 303px;
 }
 
 	/* Shows the "progression" of funds to project goal in a strip visual format.*/
 section {
-	border-style: solid;
-	border-width: 2px;
-	border-color: #eaeaea;
-	border-radius: 2px;
+	border: 2px solid #eaeaea;
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
+	width: 303px;
 }
 
 section div {
 	background: #EF5F3C;
 	color: #EF5F3C;
-	width: 630px;
+	width: 303px;
 }
 
 form {
+	height: auto;
+	width: 303px;
+	border: 2px solid #eaeaea;
 	padding: 20px;
 }
 
-p {
-	padding: 20px
-}
-	.why-question {
-		color: #20A1D4
-		font-style: italic;
-		text-align: left;
-		padding: 0px 40px 40px 40px;
+.field-and-button {
+	display: flex;
+	column-count: 2;
 }
 
 input {
-	display: flex;
-	flex-direction: row;
+	display: block;
+	width: 100px;
+	color: #777;
 	padding: 20px;
-}
-
-button {
-	display: flex;
-	font-weight: bold;
-	background: #eaeaea;
-	padding: 20px
 }
 
 .button-give {
-	display: flex;
-	flex-direction: row;
+	display: block;
+	width: 100px;
 	color: white;
 	background: #1CBC2C;
 	padding: 20px;
+	margin: 20px;
+
+}
+
+.why-question {
+		float: left;
+		color: #20A1D4
+		font-style: italic;
+		text-align: left;
+		padding: 20px 40px 40px 40px;
+}
+
+.bottom-buttons {
+	display: flex;
+	row-count: 2;
 }
 
 .button-left {
+	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	margin: 20px;
+	font-weight: bold;
+	background: #eaeaea;
+	padding: 20px;
 }
 
 .button-right {
+	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
+	margin: 20px;
+	font-weight: bold;
+	background: #eaeaea;
+	padding: 20px;
 }
