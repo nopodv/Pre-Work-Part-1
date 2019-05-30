@@ -41,75 +41,70 @@ h1 {
 
 /* Your CSS code goes here */
 
-body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #777;
-	line-height: 1.4;
-}
-
-.my-container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
-}
-
-.progress-text {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+header {
 	color: white;
 	background-color: #424242;
-	padding: 20px 40px;
+	padding: 20px 60px;
 }
 
-/* Shows the "progression" of funds to project goal in a strip visual format.*/
-.progress-strip {
-	max-width: 630px;
-	column-count: : 2;
-	columns: auto #EF5F3C 25fr #eaeaea;
-	max-height: 5em;
+	/* Shows the "progression" of funds to project goal in a strip visual format.*/
+section {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #eaeaea;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
 }
 
-.form-donor {
-	padding: 10px;
+section div {
+	background: #EF5F3C;
+	color: #EF5F3C;
+	width: 630px;
 }
 
-p
-	.question {
+form {
+	padding: 20px;
+}
+
+p {
+	padding: 20px
+}
+	.why-question {
 		color: #20A1D4
 		font-style: italic;
+		text-align: left;
+		padding: 0px 40px 40px 40px;
 }
 
-.field-donate
-	input {
-		font-size: 1.5em;
-		font-weight: bold;
-		color: #424242;
-		text-align: left;
-		padding: 20px;
+input {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+
+button {
+	display: flex;
+	font-weight: bold;
+	background: #eaeaea;
+	padding: 20px
 }
 
 .button-give {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
 	color: white;
-	background-color: #1CBC2C;
+	background: #1CBC2C;
 	padding: 20px;
 }
 
 .button-left {
-	font-weight: bold;
-	text-align: center;
-	padding: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
+	flex-direction: row;
+	align-items: flex-start;
 }
 
 .button-right {
-	font-weight: bold;
-	text-align: center;
-	padding: 10px;
-	margin-left: 10px;
-	margin-top: 10px;
+	flex-direction: row;
+	align-items: flex-end;
 }
