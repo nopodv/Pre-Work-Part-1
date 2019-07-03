@@ -41,90 +41,133 @@ h1 {
 
 /* Your CSS code goes here */
 
-.my-container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
-}
 
-header {
-	color: white;
+.bubble {
 	background-color: #424242;
-	padding: 20px 60px;
-	width: 303px;
+	color: white;
+	border-radius: 4px;
+	max-width: 303px;
+	padding: 15px 30px;
+	position: relative;
 }
 
-	/* Shows the "progression" of funds to project goal in a strip visual format.*/
+	/* Shows the "bubble's tail (triangle)" to show funds to meet the goal. */
+.bubble::after {
+	content: "";
+	display: block;
+	position: absolute;
+
+	top: 50px;
+	right: 30px;
+
+	width: 0;
+	height: 0;
+	border-top: 9px solid #424242;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
+	/* Shows the "progression" of funds to project goal in a visual strip format.*/
 section {
-	border: 2px solid #eaeaea;
+	border: 1px solid #eaeaea;
+	margin-top: 10px;
+	width: 303px;
 	display: flex;
 	flex-direction: row;
-	margin-top: 20px;
-	width: 303px;
 }
 
 section div {
 	background: #EF5F3C;
 	color: #EF5F3C;
 	width: 303px;
+	height: 10px;
 }
 
 form {
 	height: auto;
 	width: 303px;
-	border: 2px solid #eaeaea;
+	border: 1px solid #eaeaea;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+form p {
+	text-align: left;
+	color: #777;
+}
+
+.explain {
+	text-align: left;
+	margin-top: 15px;
+	color: #777;
 }
 
 .field-and-button {
 	display: flex;
-	column-count: 2;
+	flex-direction: row;
+	justify-content: center;
 }
 
 input {
-	display: block;
-	width: 100px;
-	color: #777;
+	width: 50%;
+	height: 10px;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+  color: #777;
+	font-size: 17px;
+	font-weight: bold;
 	padding: 20px;
+	padding-left: 10px;
+	margin: 15px;
+	margin-left: 0px;
 }
 
 .button-give {
-	display: block;
-	width: 100px;
+	width: 50%;
+	height: 10px;
 	color: white;
+	border: none;
+	border-radius: 4px;
 	background: #1CBC2C;
-	padding: 20px;
-	margin: 20px;
-
+	padding: 15px 20px 27px 20px;
+	margin-top: 15px;
 }
 
 .why-question {
-		float: left;
-		color: #20A1D4
-		font-style: italic;
-		text-align: left;
-		padding: 20px 40px 40px 40px;
+	color: #20A1D4;
+	align-self: flex-start;
+	margin-left: 5px;
 }
 
 .bottom-buttons {
+	width: 303px;
+	margin-top: 15px;
 	display: flex;
-	row-count: 2;
+	justify-content: space-between;
+}
+
+p button {
+	color: #777;
+	background-color: #eaeaea;
 }
 
 .button-left {
-	display: flex;
-	flex-direction: row;
-	margin: 20px;
-	font-weight: bold;
+	font-weight: bolder;
 	background: #eaeaea;
-	padding: 20px;
+	color: #666;
+	padding: 10px;
+	width: 144px;
+	border-style: solid;
+	border-radius: 2px;
 }
 
 .button-right {
-	display: flex;
-	flex-direction: row;
-	margin: 20px;
 	font-weight: bold;
 	background: #eaeaea;
-	padding: 20px;
+	color: #666;
+	padding: 10px;
+	width: 144px;
+	border-style: solid;
+	border-radius: 2px;
 }
